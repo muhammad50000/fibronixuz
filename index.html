@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>FIBRONIX — Zamonaviy elektronika do'koni</title>
+<meta name="description" content="FIBRONIX — telefon, noutbuk, kompyuter va uy elektronikasi. Original mahsulot, tez yetkazib berish.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="wrap">
+    <div class="top-bar-left">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6l8-4z"/></svg>
+      <span id="topBarMessage">Original mahsulot &middot; Rasmiy kafolat</span>
+    </div>
+    <div class="top-bar-right">
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2-8 4 16 2-8h6"/></svg>
+        O'zbekiston bo'ylab yetkazib berish
+      </span>
+      <span id="topBarPhone">+998 90 180 50 00</span>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <button class="menu-toggle" id="menuToggle" aria-label="Menyu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+
+    <a href="#" class="logo logo-home" id="logoHome">
+      <span class="logo-badge">
+        <svg viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 46 C14 27 29 12 48 12 H108 C108 12 106 15 103 19 L62 58 H20 C17 58 14 55 14 52 Z" fill="#14171e"/>
+          <path d="M16 66 H58 C55 74 40 108 30 128 C27 134 21 138 14 138 C10 138 8 135 8 131 L8 82 C8 75 11 69 16 66 Z" fill="#14171e"/>
+          <path d="M34 66 H74 C77 66 78 69 76 72 L56 94 C54 96 51 96 49 94 L33 94 C30 94 29 91 31 88 Z" fill="#2F6BFF"/>
+        </svg>
+      </span>
+      FIBRONIX
+    </a>
+
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="text" id="searchInput" placeholder="Mahsulot, brend yoki kategoriya qidirish...">
+      <button id="searchBtn">Qidirish</button>
+    </div>
+
+    <div class="header-actions">
+      <button class="icon-action" id="loginBtn">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21a8 8 0 1 0-16 0"/><circle cx="12" cy="8" r="5"/></svg>
+        <span>Kirish</span>
+      </button>
+      <button class="icon-action" id="wishlistBtn">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        <span>Sevimli</span>
+        <span class="badge" id="wishlistBadge">0</span>
+      </button>
+      <button class="icon-action" id="cartBtn">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+        <span>Savat</span>
+        <span class="badge" id="cartBadge">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="category-nav" id="categoryNav">
+  <div class="wrap">
+    <button class="all-cats" data-cat="all">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      Barcha kategoriyalar
+    </button>
+    <button data-cat="Optik asboblar">Optik asboblar</button>
+    <button data-cat="Tovarlar">Tovarlar</button>
+    <button data-cat="Kabellar">Kabellar</button>
+    <button data-cat="Oddiy asboblar">Oddiy asboblar</button>
+    <button data-cat="Telefonlar">Telefon &amp; Planshet</button>
+    <button data-cat="Noutbuklar">Noutbuk &amp; Kompyuter</button>
+    <button data-cat="Televizorlar">Televizorlar</button>
+    <button data-cat="Uy texnikasi">Uy texnikasi</button>
+    <button data-cat="Audio">Audio</button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-top">
+    <span class="logo">
+      <span class="logo-badge">
+        <svg viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 46 C14 27 29 12 48 12 H108 C108 12 106 15 103 19 L62 58 H20 C17 58 14 55 14 52 Z" fill="#14171e"/>
+          <path d="M16 66 H58 C55 74 40 108 30 128 C27 134 21 138 14 138 C10 138 8 135 8 131 L8 82 C8 75 11 69 16 66 Z" fill="#14171e"/>
+          <path d="M34 66 H74 C77 66 78 69 76 72 L56 94 C54 96 51 96 49 94 L33 94 C30 94 29 91 31 88 Z" fill="#2F6BFF"/>
+        </svg>
+      </span>
+      FIBRONIX
+    </span>
+    <button class="icon-btn" id="menuClose" aria-label="Yopish">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <button data-cat="Optik asboblar">Optik asboblar</button>
+  <button data-cat="Tovarlar">Tovarlar</button>
+  <button data-cat="Kabellar">Kabellar</button>
+  <button data-cat="Oddiy asboblar">Oddiy asboblar</button>
+  <button data-cat="Telefonlar">Telefon &amp; Planshet</button>
+  <button data-cat="Noutbuklar">Noutbuk &amp; Kompyuter</button>
+  <button data-cat="Televizorlar">Televizorlar</button>
+  <button data-cat="Uy texnikasi">Uy texnikasi</button>
+  <button data-cat="Audio">Audio</button>
+</div>
+
+<div id="homeView">
+
+<section class="banner-hero">
+  <div class="wrap">
+    <div class="banner-main" id="bannerMain">
+      <span class="banner-eyebrow" id="bannerEyebrow">Yangi kelim — 2026</span>
+      <h1 id="bannerTitle">Texnika bugun buyurtma, ertaga qo'lingizda.</h1>
+      <p id="bannerSubtitle">Telefon, noutbuk va uy elektronikasi — rasmiy kafolat bilan, O'zbekiston bo'ylab yetkazib berish.</p>
+      <a href="#katalog" class="banner-cta" id="bannerCta">Katalogni ko'rish →</a>
+      <div class="banner-dots" id="bannerDots"></div>
+    </div>
+  </div>
+</section>
+
+<section class="icon-grid-section">
+  <div class="wrap">
+    <h2>Kategoriyalar bo'yicha xarid qiling</h2>
+    <div class="icon-grid">
+      <button class="icon-grid-item" data-cat="Optik asboblar">
+        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <span>Optik asboblar</span>
+      </button>
+      <button class="icon-grid-item" data-cat="Tovarlar">
+        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/></svg></div>
+        <span>Tovarlar</span>
+      </button>
+      <button class="icon-grid-item" data-cat="Kabellar">
+        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4l6 6M20 4l-6 6M6 8a6 6 0 0 0 8 8l4-4-8-8-4 4z"/></svg></div>
+        <span>Kabellar</span>
+      </button>
+      <button class="icon-grid-item" data-cat="Oddiy asboblar">
+        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a4 4 0 0 1-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 1 5.4-5.4l-3-3z"/></svg></div>
+        <span>Oddiy asboblar</span>
+      </button>
+      <button class="icon-grid-item" data-cat="Telefonlar">
+        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="2" width="10" height="20" rx="2"/></svg></div>
+        <span>Telefonlar</span>
+      </button>
+      <button class="icon-grid-item" data-cat="Noutbuklar">
+        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M2 20h20"/></svg></div>
+        <span>Noutbuklar</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="katalog">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Eng ko'p sotilgan</h2>
+      <button class="section-link" data-cat="all">Barchasini ko'rish →</button>
+    </div>
+    <div class="product-grid" id="bestProducts"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Yangi kelimlar</h2>
+      <button class="section-link" data-cat="all">Barchasini ko'rish →</button>
+    </div>
+    <div class="product-grid" id="newProducts"></div>
+  </div>
+</section>
+
+<section class="trust-strip">
+  <div class="wrap">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6l8-4z"/></svg>
+      <div><strong>Rasmiy kafolat</strong><span>Barcha mahsulotlarga 12 oygacha</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l2-8 4 16 2-8h6"/></svg>
+      <div><strong>Tez yetkazib berish</strong><span>Toshkent bo'ylab 24 soatda</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg>
+      <div><strong>Qulay to'lov</strong><span>Naqd, karta yoki bo'lib to'lash</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>24/7 qo'llab-quvvatlash</strong><span>Har doim aloqadamiz</span></div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<div id="categoryView" class="category-view" hidden>
+  <div class="wrap">
+    <button class="back-btn" id="backBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      Bosh sahifaga qaytish
+    </button>
+    <div class="section-head">
+      <h2 id="categoryViewTitle">Kategoriya</h2>
+      <span class="category-count" id="categoryCount"></span>
+    </div>
+    <div class="product-grid" id="categoryProducts"></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo">
+          <span class="logo-badge">
+            <svg viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 46 C14 27 29 12 48 12 H108 C108 12 106 15 103 19 L62 58 H20 C17 58 14 55 14 52 Z" fill="#14171e"/>
+              <path d="M16 66 H58 C55 74 40 108 30 128 C27 134 21 138 14 138 C10 138 8 135 8 131 L8 82 C8 75 11 69 16 66 Z" fill="#14171e"/>
+              <path d="M34 66 H74 C77 66 78 69 76 72 L56 94 C54 96 51 96 49 94 L33 94 C30 94 29 91 31 88 Z" fill="#2F6BFF"/>
+            </svg>
+          </span>
+          FIBRONIX
+        </span>
+        <div class="logo-tagline">Online Electronic Store</div>
+        <p>Zamonaviy elektronika do'koni. Telefon, noutbuk, kompyuter va uy texnikasi — ishonchli va tezkor xizmat bilan.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Katalog</h4>
+        <ul>
+          <li><button data-cat="Optik asboblar">Optik asboblar</button></li>
+          <li><button data-cat="Tovarlar">Tovarlar</button></li>
+          <li><button data-cat="Kabellar">Kabellar</button></li>
+          <li><button data-cat="Oddiy asboblar">Oddiy asboblar</button></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kompaniya</h4>
+        <ul>
+          <li id="footerDirector">Asoschisi: Muhammadjon Mamadqulov</li>
+          <li id="footerFounded">Tashkil topgan: 10.09.2026</li>
+          <li><a href="https://t.me/Muhammadjon_202" target="_blank" id="footerTelegram">Telegram: @Muhammadjon_202</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Aloqa</h4>
+        <ul>
+          <li><a href="tel:+998901805000" id="footerPhone">+998 90 180 50 00</a></li>
+          <li><a href="mailto:info@fibronix.uz">info@fibronix.uz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FIBRONIX. Barcha huquqlar himoyalangan.</span>
+      <div class="footer-social">
+        <a href="https://t.me/Muhammadjon_202" target="_blank" aria-label="Telegram">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3L2.6 12c-.9.4-.9 1.6.1 1.9l4.9 1.5 1.9 5.9c.3.9 1.4 1.1 2 .4l2.7-2.9 5.1 3.7c.8.6 2 .2 2.2-.8l3.1-15.4c.3-1.2-.9-2.2-2-1.9zM8.9 14.6l9.5-6.8c.3-.2.6.2.3.4l-7.9 7.5-.3 3.3-1.6-4.4z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

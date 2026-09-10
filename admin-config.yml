@@ -1,0 +1,120 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: /
+public_folder: /
+
+publish_mode: simple
+
+collections:
+  - name: products
+    label: Mahsulotlar
+    label_singular: Mahsulot
+    files:
+      - name: products
+        label: Mahsulotlar ro'yxati
+        file: products.json
+        format: json
+        fields:
+          - name: products
+            label: Mahsulotlar
+            widget: list
+            fields:
+              - name: id
+                label: ID
+                widget: string
+              - name: name
+                label: Nomi
+                widget: string
+              - name: category
+                label: Kategoriya
+                widget: select
+                options:
+                  - Optik asboblar
+                  - Tovarlar
+                  - Kabellar
+                  - Oddiy asboblar
+                  - Telefonlar
+                  - Noutbuklar
+                  - Kompyuterlar
+                  - Planshetlar
+                  - Televizorlar
+                  - Audio
+                  - Uy texnikasi
+                  - Aksessuarlar
+              - name: price
+                label: Narxi (so'm)
+                widget: number
+                value_type: int
+              - name: old_price
+                label: Eski narxi (chegirma bo'lsa)
+                widget: number
+                value_type: int
+                required: false
+              - name: flag
+                label: Belgi
+                widget: select
+                required: false
+                options:
+                  - new
+                  - sale
+              - name: rating
+                label: Reyting (1-5)
+                widget: number
+                value_type: float
+                required: false
+              - name: section
+                label: Bo'lim
+                widget: select
+                options:
+                  - best
+                  - new
+              - name: image
+                label: Rasm
+                widget: image
+                required: false
+
+  - name: settings
+    label: Sayt sozlamalari
+    label_singular: Sozlama
+    files:
+      - name: settings
+        label: Umumiy sozlamalar
+        file: settings.json
+        format: json
+        fields:
+          - name: phone
+            label: Telefon raqami
+            widget: string
+          - name: telegram
+            label: Telegram (masalan @nomi)
+            widget: string
+          - name: director_name
+            label: Asoschisi ismi
+            widget: string
+          - name: director_title
+            label: Lavozimi
+            widget: string
+          - name: founded_date
+            label: Tashkil topgan sana
+            widget: string
+          - name: top_bar_message
+            label: Yuqori panel yozuvi
+            widget: string
+          - name: banner_slides
+            label: Bosh sahifa banneri (aylanadigan)
+            widget: list
+            fields:
+              - name: eyebrow
+                label: Kichik sarlavha
+                widget: string
+              - name: title
+                label: Asosiy sarlavha
+                widget: string
+              - name: subtitle
+                label: Tavsif
+                widget: text
+              - name: cta_text
+                label: Tugma matni
+                widget: string
