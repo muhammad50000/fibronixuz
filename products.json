@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": "p001",
+      "name": "FIBRONIX Pro Note X1",
+      "category": "Telefonlar",
+      "price": 12450000,
+      "old_price": null,
+      "flag": "new",
+      "section": "best",
+      "image": ""
+    },
+    {
+      "id": "p002",
+      "name": "Lenovo IdeaPad Slim 3",
+      "category": "Noutbuklar",
+      "price": 8790000,
+      "old_price": 9490000,
+      "flag": "sale",
+      "section": "best",
+      "image": ""
+    },
+    {
+      "id": "p003",
+      "name": "Samsung Galaxy A55",
+      "category": "Telefonlar",
+      "price": 4590000,
+      "old_price": null,
+      "flag": null,
+      "section": "best",
+      "image": ""
+    },
+    {
+      "id": "p004",
+      "name": "Xiaomi Smart TV 55\"",
+      "category": "Televizorlar",
+      "price": 6350000,
+      "old_price": null,
+      "flag": null,
+      "section": "best",
+      "image": ""
+    },
+    {
+      "id": "p005",
+      "name": "JBL Tune 510BT",
+      "category": "Audio",
+      "price": 590000,
+      "old_price": null,
+      "flag": "new",
+      "section": "new",
+      "image": ""
+    },
+    {
+      "id": "p006",
+      "name": "HP Pavilion 15",
+      "category": "Noutbuklar",
+      "price": 11200000,
+      "old_price": null,
+      "flag": "new",
+      "section": "new",
+      "image": ""
+    },
+    {
+      "id": "p007",
+      "name": "Xiaomi Redmi Pad SE",
+      "category": "Planshetlar",
+      "price": 2390000,
+      "old_price": null,
+      "flag": "new",
+      "section": "new",
+      "image": ""
+    },
+    {
+      "id": "p008",
+      "name": "Robot changyutgich Deerma",
+      "category": "Uy texnikasi",
+      "price": 2150000,
+      "old_price": 2490000,
+      "flag": "sale",
+      "section": "new",
+      "image": ""
+    }
+  ]
+}
