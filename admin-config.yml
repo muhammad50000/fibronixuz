@@ -1,12 +1,12 @@
 backend:
   name: git-gateway
   branch: main
-
+ 
 media_folder: /
 public_folder: /
-
+ 
 publish_mode: simple
-
+ 
 collections:
   - name: products
     label: Mahsulotlar
@@ -74,7 +74,7 @@ collections:
                 label: Rasm
                 widget: image
                 required: false
-
+ 
   - name: settings
     label: Sayt sozlamalari
     label_singular: Sozlama
