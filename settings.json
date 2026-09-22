@@ -1,0 +1,28 @@
+{
+  "phone": "+998 90 180 50 00",
+  "telegram": "@Muhammadjon_202",
+  "director_name": "Muhammadjon Mamadqulov",
+  "director_title": "Asoschisi",
+  "founded_date": "10.09.2026",
+  "top_bar_message": "Original mahsulot · Rasmiy kafolat",
+  "banner_slides": [
+    {
+      "eyebrow": "Yangi kelim — 2026",
+      "title": "Texnika bugun buyurtma, ertaga qo'lingizda.",
+      "subtitle": "Telefon, noutbuk va uy elektronikasi — rasmiy kafolat bilan, O'zbekiston bo'ylab yetkazib berish.",
+      "cta_text": "Katalogni ko'rish"
+    },
+    {
+      "eyebrow": "Optik asboblar",
+      "title": "Aniqlik uchun yaratilgan optika.",
+      "subtitle": "Professional optik asboblar — ishingiz uchun eng zamonaviy yechimlar.",
+      "cta_text": "Optikani ko'rish"
+    },
+    {
+      "eyebrow": "Kabel va aksessuarlar",
+      "title": "Ishonchli ulanish, uzluksiz ish.",
+      "subtitle": "Barcha turdagi kabellar va aksessuarlar bir joyda.",
+      "cta_text": "Kabellarni ko'rish"
+    }
+  ]
+}
